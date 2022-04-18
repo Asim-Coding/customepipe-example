@@ -1,0 +1,13 @@
+<hello name="{{ name }}"></hello>
+<p>
+  Start editing to see some magic happen :)
+</p>
+<h3>custome pipe example</h3>
+<table border="1">
+  <td>name</td><td>Gender</td><td>Age</td>
+  <tr *ngFor="let employee of employee">
+   <td>{{employee.name |mypipe:employee.gender}}</td>
+   <td>{{employee.gender}}</td>
+   <td>{{employee.age}}</td>
+  </tr>
+</table>
